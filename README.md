@@ -2,7 +2,7 @@
 
 - [Table of contents 📔](#table-of-contents-)
 - [Background](#background)
-- [Installation 📩](#installation-)
+- [Installation](#installation)
 - [Winch usages](#winch-usages)
 - [Hosting custom repo](#hosting-custom-repo)
 
@@ -10,7 +10,7 @@
 ## Background
 
 <a name="installation"></a>
- ## Installation 📩
+ ## Installation
     
   <details> <summary><code>Cargo</code></summary>
 
