@@ -12,37 +12,38 @@ enum Command {
         #[clap()]
         package: String,
 
-        #[clap(long)]
+        #[clap(long, short = 'f')]
         force: bool,
 
-        #[clap(short)]
-        f: bool,
-
-        #[clap(long)]
+        #[clap(long, short = 'r')]
         remote_repo: bool,
-
-        #[clap(short)]
-        rp: bool,
     },
     Uninstall {
         #[clap()]
         package: String,
 
-        #[clap(long)]
+        #[clap(long, short = 'f')]
         force: bool,
 
-        #[clap(short)]
-        f: bool,
-
-        #[clap(long)]
+        #[clap(long, short = 'r')]
         remote_repo: bool,
-
-        #[clap(short)]
-        rp: bool,
     },
 }
 
 fn main() {
     let args = Args::parse();
-    println!("{:?}", args);
+
+    match args.cmd {
+        Some(Command::Install { package, force, remote_repo}) => {
+            println!("Install command with package: {}", package);
+            println!("force: {}, remote_repo: {}", force, remote_repo);
+        }
+        Some(Command::Uninstall { package, force, remote_repo}) => {
+            println!("Uninstall command with package: {}", package);
+            println!("force: {}, remote_repo: {}", force, remote_repo);
+        }
+        None => {
+            println!("No subcommand provided");
+        }
+    }
 }
