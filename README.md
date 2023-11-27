@@ -104,8 +104,7 @@
         data="/home/user/.local/share/winch/data/Architecture/" 
     
     install
-        commands
-            "cargo build"
+        "cargo build"
   ```
 - Explanation 
 
