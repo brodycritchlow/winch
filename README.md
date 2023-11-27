@@ -96,12 +96,9 @@
   ```
     package
         remote = ""
-        aarch = "Architecture"
 
     local
         home="/home/user/.local/winch/hysp"
-        bin="/home/user/.local/winch/hysp/bin/" 
-        data="/home/user/.local/share/winch/data/Architecture/" 
     
     install
         "cargo build"
@@ -121,11 +118,8 @@
   ```bash
 .
 │
-├── src
-│   └── x86_64 # Your cpu Architecture 
-│       └── config.winch # The config file for your chosen architecture
-|   └── universal
-│       └── config.winch # The config file for your chosen architecture
+├── winch
+│   └── config.winch # The config file for your chosen architecture
 ```
 
 </details>
