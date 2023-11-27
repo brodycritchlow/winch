@@ -5,6 +5,7 @@
 - [Installation](#installation)
 - [Winch usages](#winch-usages)
 - [Hosting custom repo](#hosting-custom-repo)
+- [Progress](#progress)
 
 <a name="bacground"></a>
 ## Background
@@ -106,8 +107,7 @@
 | NAME        | DESCRIPTION                                  | DEFAULT                                      |
 |-------------|----------------------------------------------|----------------------------------------------|
 | remote      | Remote repository URL for the project        | `""`                      |
-| aarch       | Target architecture for the project          | `Architecture`                              |
-| home        | Where winch builds the project source.                   | `/home/user/.local/winch/winch`              |
+| home        | Where winch builds the project source.       | `/home/user/.local/winch/winch`              |
 | install     | Installation commands for the project        | `cargo build`                               |
 
 <details> <summary><code>🎄 Tree view of the repo </code></summary>
@@ -121,3 +121,26 @@
 ```
 
 </details>
+
+<a name="progress"></a>
+## Progress
+
+#### Installation
+- [ ] Winch grabs the source code for the specified package.
+- [ ] Winch grabs the source code for the remote repository package.
+- [ ] Winch uses the `./winch/config.winch` to install and add binary to `$PATH`.
+- [ ] Winch adds the binary to `config.winch['home']` for ease of access.
+- [ ] Winch uses specified mirrors through `-mirror=` option.
+
+#### Removal
+- [ ] Winch finds the binary in `config.winch['home']` and removes it.
+- [ ] Winch finds any folders that were created by the package and removes it. (`--clean`)
+
+#### Documentation
+- [ ] Add a custom help screen for a user-friendly interface. 
+- [ ] Add documentation for each command.
+- [ ] Add more in-depth documentation about remote repos.
+
+#### Winch Other
+- [ ] Add a way to search through packages, that are indexed in winch.
+- [ ] Add a way to add package repos, that make it easier to install remote repos.
