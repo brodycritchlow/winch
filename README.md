@@ -45,7 +45,7 @@
   
   
   ```bash
-  winch |install|uninstall| -h # check for help menu
+  winch |install|remove| -h # check for help menu
   ```
 <!---![screenshot_2023-11-25_22-37-02](https://github.com/pwnwriter/winch/assets/90331517/48e6d5be-3174-4aef-8d5e-a9c02c58aaf4)-->
 
