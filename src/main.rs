@@ -1,3 +1,6 @@
-fn main() {
-    println!("Hello, world!");
+use clap::Parser;
+
+#[derive(Parser)]
+struct Arguments {
+    
 }
