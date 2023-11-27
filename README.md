@@ -126,11 +126,11 @@
 ## Progress
 
 #### Installation
-- [ ] Winch grabs the source code for the specified package.
-- [ ] Winch grabs the source code for the remote repository package.
-- [ ] Winch uses the `./winch/config.winch` to install and add binary to `$PATH`.
-- [ ] Winch adds the binary to `config.winch['home']` for ease of access.
-- [ ] Winch uses specified mirrors through `-mirror=` option.
+- [ ] Winch grabs the source code for the specified package. [#1](https://github.com/brodycritchlow/winch/issues/1)
+- [ ] Winch grabs the source code for the remote repository package. [#1](https://github.com/brodycritchlow/winch/issues/1)
+- [ ] Winch uses the `./winch/config.winch` to install and add binary to `$PATH`. [#2](https://github.com/brodycritchlow/winch/issues/2)
+- [ ] Winch adds the binary to `config.winch['home']` for ease of access. [#2](https://github.com/brodycritchlow/winch/issues/2)
+- [ ] Winch uses specified mirrors through `-mirror=` option. [#3](https://github.com/brodycritchlow/winch/issues/3)
 
 #### Removal
 - [ ] Winch finds the binary in `config.winch['home']` and removes it.
