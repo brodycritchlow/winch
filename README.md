@@ -72,10 +72,10 @@
 
 </details>
 
-<details> <summary><code>Install remote repository </code></summary>
+<details> <summary><code>Install remote repository</code></summary>
 &nbsp;
 
-  This requires a `config.winch`, you can find more [here](#usages)
+  This requires a `config.winch`, you can find more [here](#repo)
   
   ```bash
   winch install -rp <link>
