@@ -1,12 +1,10 @@
 ## Table of contents 📔
 
-* [`Background`](#background)
-* [`Installation`](#installation)
-* [`Hysp usages`](#usages)
-* [`Hosting custom repo`](#repo)
-* [`Packages`](#pkgs)
-* [`Support`](#support)
-* [`License`](#license)
+- [Table of contents 📔](#table-of-contents-)
+- [Background](#background)
+- [Installation 📩](#installation-)
+- [Winch usages](#winch-usages)
+- [Hosting custom repo](#hosting-custom-repo)
 
 <a name="bacground"></a>
 ## Background
@@ -32,11 +30,11 @@
   &nbsp;
  
   ```bash
-  git clone --depth=1 https://github.com/pwnwriter/hysp --branch=main
-  cd hysp
+  git clone --depth=1 https://github.com/pwnwriter/winch --branch=main
+  cd winch
   cargo build --release 
   ```
-  Then go to `release` dir and `./hysp` or move the `binary` to your any `$PATH` for instant access from anywhere.
+  Then go to `release` dir and `./winch` or move the `binary` to your any `$PATH` for instant access from anywhere.
 </details>
 
 <a name="usages"></a>
@@ -46,9 +44,9 @@
   
   
   ```bash
-  hysp |install|uninstall|search| -h # check for help menu
+  winch |install|uninstall|search| -h # check for help menu
   ```
-<!---![screenshot_2023-11-25_22-37-02](https://github.com/pwnwriter/hysp/assets/90331517/48e6d5be-3174-4aef-8d5e-a9c02c58aaf4)-->
+<!---![screenshot_2023-11-25_22-37-02](https://github.com/pwnwriter/winch/assets/90331517/48e6d5be-3174-4aef-8d5e-a9c02c58aaf4)-->
 
 </details>
 
@@ -56,9 +54,9 @@
 &nbsp;
   
   ```bash
-  hysp install <pkg> # use --force to overwrite already installed binary 
+  winch install <pkg> # use --force to overwrite already installed binary 
   ```
-  <!---![screenshot_2023-11-25_22-37-02](https://github.com/pwnwriter/hysp/assets/90331517/48e6d5be-3174-4aef-8d5e-a9c02c58aaf4)-->
+  <!---![screenshot_2023-11-25_22-37-02](https://github.com/pwnwriter/winch/assets/90331517/48e6d5be-3174-4aef-8d5e-a9c02c58aaf4)-->
 
 </details>
 
@@ -67,10 +65,10 @@
 &nbsp;
   
   ```bash
-  hysp remove <pkg> 
+  winch remove <pkg> 
   ```
 
-<!---![screenshot_2023-11-25_22-37-02](https://github.com/pwnwriter/hysp/assets/90331517/48e6d5be-3174-4aef-8d5e-a9c02c58aaf4)-->
+<!---![screenshot_2023-11-25_22-37-02](https://github.com/pwnwriter/winch/assets/90331517/48e6d5be-3174-4aef-8d5e-a9c02c58aaf4)-->
 
 </details>
 
@@ -80,10 +78,10 @@
   This requires a `config.winch`, you can find more [here](#usages)
   
   ```bash
-  hysp install -rp <link>
+  winch install -rp <link>
   ```
 
-<!---![screenshot_2023-11-25_22-37-02](https://github.com/pwnwriter/hysp/assets/90331517/48e6d5be-3174-4aef-8d5e-a9c02c58aaf4)-->
+<!---![screenshot_2023-11-25_22-37-02](https://github.com/pwnwriter/winch/assets/90331517/48e6d5be-3174-4aef-8d5e-a9c02c58aaf4)-->
 
 </details>
 
@@ -98,7 +96,7 @@
         remote = ""
 
     local
-        home="/home/user/.local/winch/hysp"
+        home="/home/user/.local/winch/winch"
     
     install
         "cargo build"
@@ -109,7 +107,7 @@
 |-------------|----------------------------------------------|----------------------------------------------|
 | remote      | Remote repository URL for the project        | `""`                      |
 | aarch       | Target architecture for the project          | `Architecture`                              |
-| home        | Where winch builds the project source.                   | `/home/user/.local/winch/hysp`              |
+| home        | Where winch builds the project source.                   | `/home/user/.local/winch/winch`              |
 | install     | Installation commands for the project        | `cargo build`                               |
 
 <details> <summary><code>🎄 Tree view of the repo </code></summary>
