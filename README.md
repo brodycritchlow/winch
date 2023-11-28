@@ -79,7 +79,7 @@
   This requires a `config.winch`, you can find more [here](#repo)
   
   ```bash
-  winch install -rp <link>
+  winch install -remote_repository <link>
   ```
 
 <!---![screenshot_2023-11-25_22-37-02](https://github.com/pwnwriter/winch/assets/90331517/48e6d5be-3174-4aef-8d5e-a9c02c58aaf4)-->
