@@ -1,3 +1,5 @@
+mod configparser;
+
 use clap::Parser;
 
 #[derive(Parser, Debug)]
