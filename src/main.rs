@@ -195,7 +195,7 @@ fn main() {
 
                         let end_suffix = format!("/{}/winch/config.winch", gh_main_branch);
 
-                        let package = format!("{}{}", package.to_owned(), (&end_suffix)); 
+                        let package = format!("{}{}", package.to_owned(), (&end_suffix));
                         println!("{}", package);
                     }
                 }
