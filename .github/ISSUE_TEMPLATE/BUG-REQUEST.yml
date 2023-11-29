@@ -1,0 +1,63 @@
+name: "🐞 Bug Fix Request"
+description: Create a new ticket for a bug fix request
+title: "🐞 [BUG] - <title>"
+labels: [
+  "bug"
+]
+body:
+  - type: input
+    id: start_date
+    attributes:
+      label: "Start Date"
+      description: Start of development
+      placeholder: "month/day/year"
+    validations:
+      required: false
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: "Reproduction Steps"
+      description: Detailed steps to reproduce the bug
+      placeholder: Outline the steps to encounter the issue
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: "Expected Behavior"
+      description: Describe what should happen instead of the bug
+      placeholder: Explain the correct behavior or outcome
+    validations:
+      required: true
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: "Actual Behavior"
+      description: Describe the current incorrect behavior
+      placeholder: Detail what is happening incorrectly
+    validations:
+      required: true
+  - type: textarea
+    id: environment_details
+    attributes:
+      label: "Environment Details"
+      description: Specify relevant details about the environment
+      placeholder: Include information like OS, browser, or platform
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: "Workaround"
+      description: Any temporary solution or workaround, if known
+      placeholder: Suggest a temporary fix if available
+    validations:
+      required: false
+  - type: textarea
+    id: related_issues
+    attributes:
+      label: "Related Issues"
+      description: Mention any related issues or tickets
+      placeholder: List other relevant issues, if any
+    validations:
+      required: false
