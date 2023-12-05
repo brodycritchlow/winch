@@ -2,10 +2,21 @@ use std::fs::File;
 use std::io::Write;
 use crate::config_parser::Data;
 
+pub fn create_install_script_file(script_file: &mut File, script_file_name: String, data: Data){
+    #[cfg(target_os = "linux")]
+    let bin_bash = "#!/bin/bash";
 
-fn create_install_script_file(script_file: &mut File, script_file_name: String, data: Data){
-    writeln!(script_file, "#!/bin/bash").expect("Error writing to script file");
-    writeln!(script_file, "cd {} || mkdir ~/winch && cd ~/winch" , data.local.home).expect("Error writing to script file");
+    #[cfg(not(target_os = "linux"))]
+    let bin_bash = "";
+
+    #[cfg(target_os = "linux")]
+    let and = "&&";
+
+    #[cfg(not(target_os = "linux"))]
+    let and = ";";
+
+    writeln!(script_file, "{}", bin_bash).expect("Error writing to script file");
+    writeln!(script_file, "cd {} || mkdir ~/winch {} cd ~/winch" , data.local.home, or, and).expect("Error writing to script file");
 
     // Git clone command
     writeln!(
@@ -16,8 +27,8 @@ fn create_install_script_file(script_file: &mut File, script_file_name: String, 
         .expect("Error writing to script file");
     writeln!(
         script_file,
-        "git clone {} || exit 1",
-        data.package.remote
+        "git clone {} {} exit 1",
+        data.package.remote, and
     )
         .expect("Error writing to script file");
     writeln!(script_file, "cd {}", data.package.name).expect("Error writing to script file");
